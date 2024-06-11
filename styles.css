@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#letter-container {
+    display: flex;
+}
+
+.letter {
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    animation: walk 2s infinite;
+}
+
+@keyframes walk {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
