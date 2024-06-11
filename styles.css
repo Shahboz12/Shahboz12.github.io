@@ -6,6 +6,7 @@ body {
     background-color: #282c34;
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* To prevent scrollbars */
 }
 
 #letter-container {
@@ -16,6 +17,12 @@ body {
     font-size: 3rem;
     color: white;
     position: relative;
+    animation: walk 2s infinite;
+}
+
+.emoji {
+    font-size: 3rem;
+    position: absolute;
     animation: walk 2s infinite;
 }
 
