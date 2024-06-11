@@ -9,8 +9,16 @@ body {
     overflow: hidden; /* To prevent scrollbars */
 }
 
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #letter-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .letter {
@@ -32,5 +40,16 @@ body {
     }
     50% {
         transform: translateY(-20px);
+    }
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 600px) {
+    .letter {
+        font-size: 2rem;
+    }
+
+    .emoji {
+        font-size: 2rem;
     }
 }
