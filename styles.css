@@ -13,11 +13,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20vh; /* Adjust as needed */
 }
 
 #letter-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    display: flex;
     justify-content: center;
 }
 
@@ -28,13 +34,22 @@ body {
     animation: walk 2s infinite;
 }
 
-.emoji {
-    font-size: 3rem;
-    position: absolute;
-    animation: walk 2s infinite;
+@keyframes walk {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
-@keyframes walk {
+.emoji {
+    position: absolute;
+    font-size: 2rem; /* Adjust size as needed */
+    animation: wave 2s infinite;
+}
+
+@keyframes wave {
     0%, 100% {
         transform: translateY(0);
     }
@@ -50,6 +65,6 @@ body {
     }
 
     .emoji {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
